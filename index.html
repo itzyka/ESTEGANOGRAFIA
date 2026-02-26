@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro de Investigación en Esteganografía</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="intro">
+<h1>No me puedes ver, pero estoy aqui.</h1>
+<p>La información que estás a punto de visualizar se oculta a simple vista.La esteganografía no cifra… desaparece mensajes dentro de lo cotidiano.</p>
+<button onclick="enterSite()">¡¡Estoy listo!!</button>
+</div>
+
+<div id="progress"></div>
+<canvas id="matrix"></canvas>
+<div class="overlay"></div>
+
+<header>
+<h1 class="main-title hologram">LA ESTEGANOGRAFÍA</h1>
+<p class="subtitle">“El verdadero secreto no es esconder el mensaje… es que nadie sospeche que existe.”</p>
+</header>
+
+<section>
+<h2>Definición Técnica.</h2>
+<p>La esteganografía es la ciencia de ocultar información dentro de un medio portador sin alterar su percepción externa. Matemáticamente, implica la inserción controlada de bits en regiones redundantes de datos digitales.</p>
+<p>Se basa en el principio de imperceptibilidad y capacidad de carga (payload). Un sistema esteganográfico eficiente maximiza la cantidad de datos ocultos minimizando la detectabilidad estadística.</p>
+</section>
+
+<section>
+<h2>Evolución Histórica</h2>
+<div class="timeline">
+<div><strong>Grecia Antigua:</strong> Mensajes ocultos bajo cera en tablillas.</div>
+<div class="image-placeholder"><img src="Grecia_antigua.jpg" alt=""></div>
+<div><strong>Segunda Guerra Mundial:</strong> Microdots en fotografías.</div>
+<div class="image-placeholder"><img src="Segunda_guerra_mundial.webp" alt=""></div>
+<div><strong>Década de 1990:</strong> Esteganografía digital en imágenes BMP y WAV.</div>
+<div class="image-placeholder"><img src="Estegano_1990.png" alt=""></div>
+<div><strong>Actualidad:</strong> Uso en redes sociales, malware avanzado y protección de derechos digitales.</div>
+<div class="image-placeholder"><img src="Esteganografia_actual.webp" alt=""></div>
+</div>
+</section>
+
+<section>
+<h2>Simulación Visual de Inserción LSB</h2>
+<p>Haz clic en los píxeles para simular la modificación del bit menos significativo.</p>
+
+<div id="lsbData">
+<p><strong>Valor original:</strong> <span id="originalDecimal">182</span> (<span id="originalBinary">10110110</span>)</p>
+<p><strong>Valor modificado:</strong> <span id="modifiedDecimal">182</span> (<span id="modifiedBinary">10110110</span>)</p>
+</div>
+
+<div class="pixel-grid" id="pixelGrid"></div>
+</section>
+
+<section>
+<h2>Caso Real Documentado</h2>
+<p>En 2010, se descubrió que organizaciones criminales ocultaban instrucciones cifradas dentro de imágenes aparentemente normales publicadas en foros públicos. Estas imágenes contenian datos incrustados mediante técnicas LSB y eran descargadas por colaboradores para extraer los mensajes ocultos.</p>
+<p>El caso evidenció cómo la esteganografía puede utilizarse como canal encubierto de comunicación digital, lo que impulsó el desarrollo de herramientas modernas de esteganálisis.</p>
+<div class="image-placeholder"><img src="Caso_real.webp" alt=""></div>
+</section>
+
+<section>
+<h2>Riesgos y Uso Malicioso</h2>
+<p>La esteganografía puede utilizarse para ocultar malware, exfiltrar datos corporativos o establecer canales encubiertos de comunicación en redes comprometidas.</p>
+<p>por ello, el esteganálisis moderno emplea análisis estadístico, detección de ruido anómalo y algoritmos de aprendizaje automático.</p>
+</section>
+
+<footer>
+Itzy Karime Pelagio Cortez V-B, Vespertino.
+Ing. Informatica.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
