@@ -35,7 +35,25 @@ section.visible{opacity:1;transform:translateY(0)}
 section h2{color:#00ff88;margin-bottom:30px;font-size:2rem}
 p{line-height:1.9;margin-bottom:18px;color:#e0fff5}
 
-.image-placeholder{height:220px;border:2px dashed #00ff88;border-radius:15px;margin:25px 0;display:flex;align-items:center;justify-content:center;color:#00ff88;opacity:0.6}
+.image-placeholder{
+    aspect-ratio: 16 / 9;
+    height:auto;
+    border:2px dashed #00ff88;
+    border-radius:15px;
+    margin:25px 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#00ff88;
+    opacity:0.6;
+    overflow: hidden;
+}
+.image-placeholder img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 12px;
+}
 
 .timeline{border-left:3px solid #00ff88;padding-left:30px}
 .timeline div{margin-bottom:40px;position:relative}
